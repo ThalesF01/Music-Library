@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;    
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:#0a0b24;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(23, 11, 63);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color:#0b0b1fcc;
+}
+
+a{
+    text-decoration: none;
+    color: #cfccccc2;
+    transition: all .2s ease-in-out;
+    letter-spacing: 0.8px;
+}
+
+a:hover{
+    color: #fcf6f6ec;
+}
+
+/*------------------GRID ---------------*/
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-areas: 
+    'box-1 box-2 box-2' 
+    'box-1 box-2 box-2' 
+    'box-1 box-2 box-2'
+    'box-1 box-3 box-4'
+    'box-1 box-3 box-4'
+    ;
+}
+.box-1{
+    grid-area: box-1;
+}
+.box-2{
+    grid-area: box-2;
+    padding: 0 25px;
+}
+.box-3{
+    grid-area: box-3;
+    padding: 0 20px;
+}
+.box-4{
+    grid-area: box-4;
+    padding: 0 10px;
+    overflow: auto;
+}
+
+.box-1{
+    background-color:#040517;
+    color: #e5e5e5e7;
+}
+
+.box-2, .box-3, .box-4{
+    background-color: rgb(32, 15, 86);
+    color: #e5e5e5e7;
+}
+
+/*-----------------BARRA LATERAL------------------*/
+
+.perfil{
+    display: flex;
+    padding: 24px;
+}
+
+.perfil img{
+    height: 90px;
+    width: 90px;
+    border-radius: 10px;
+}
+
+.perfilName{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.perfilName img{
+    height: 11px;
+    width: 10px;
+}
+
+.perfilName p{
+    font-size: 1.3rem;
+}
+
+.perfilName a{
+    margin-top: 10px;
+}
+
+.editProfile{
+    margin-top: 5px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.links a{
+    margin-top: 15px;
+}
+
+.links img{
+    height: 23px;
+    width: 23px;
+    margin-right: 10px;
+}
+
+/*----------------- PLAYLISTS --------------------*/
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.search input{
+    margin-left: 10px;
+    width: 85%;
+    height: 35px;
+    border-radius: 15px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color:#0a0b24;
+    color: #e5e5e5e7;
+}
+
+.search img{
+    height: 25px;
+    width: 25px;
+}
+
+.box-2 h2{
+    font-size: 1.7rem;
+    margin-top: 12px;
+}
+
+.overflow{
+    display: flex;
+    overflow: auto;
+}
+
+.overflow::-webkit-scrollbar{
+    border-radius: 15px;    
+    height: 12px;
+}
+
+.overflow::-webkit-scrollbar-thumb{
+    background-color:#0a0b24;
+    border-radius: 15px;
+}
+
+.overflow::-webkit-scrollbar-track{
+    background-color: #1f215ec0;
+    border-radius: 15px;
+}
+
+.playlists{
+   padding: 13px 10px 5px 20px;
+   
+}
+
+.playlists img{
+    height: 170px;
+    width: 300px;
+    border-radius: 15px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.playlists:hover img{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.playlists h3{
+    padding: 5px;
+    font-size: 0.9rem;
+}
+
+.playlists p{
+    padding: 3px;
+    font-size: 0.7rem;
+}
+
+/*----------------------- VIEWS ------------------------*/
+
+.views{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 15px 0px 15px;
+}
+
+.Pviews{
+    display: flex;
+    align-items: center;
+}
+
+.Pviews p{
+    padding: 10px;
+}
+
+.views img{
+    height: 60px;
+    width: 60px;
+    border-radius: 7px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.views:hover img{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/*----------------------- TRACKS -------------------------------*/
+
+h2{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.overflow2{
+    display: flex;
+    overflow:auto;
+    max-width: 100%;
+}
+
+.tracks{
+    padding: 10px 15px;
+}
+
+.tracks p{
+    font-size: 0.8rem;
+}
+
+.tracks img{
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.tracks:hover img{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
