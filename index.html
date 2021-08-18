@@ -10,31 +10,33 @@
 <body>
     <div class="container">
         <div class="box-1">
-            <div class="perfil">
-                <img src="assets/profile.jpg" alt="Perfil">
-                <div class="perfilName">
-                    <p>Dany <br/>Schudler</p>
-                    <div class="editProfile">
-                        <a href="#">Edit Profile <img src="https://images.emojiterra.com/google/android-pie/512px/2699.png" alt="engrenagem"> </a>
-                    </div>
-                </div>
-            </div>
-                            
-                <div class="links">
-                    <a href="#"> <img src="assets/Icones/Overview.png" alt="Overview"> Overview   </a>
-                    <a href="#"> <img src="assets/Icones/News.png" alt="News"> News </a>
-                    <a href="#"> <img src="assets/Icones/Playlist.png" alt="Music"> Playlists  </a>
-                    <a href="#"> <img src="assets/Icones/Discover.png" alt="Discover"> Discover  </a>
-                </div>
-
-                <div class="links">
-                    <a href="#"> <img src="assets/Icones/Dashboard.png" alt="Dashboard"> Dashboard </a>
-                    <a href="#"> <img src="assets/Icones/Message.png" alt="Messages"> Messages </a>
-                    <a href="#"> <img src="assets/Icones/Notification.png" alt="Notifications"> Notifications </a>
-                    <a href="#"> <img src="assets/Icones/User.png" alt="Account"> Account </a>
-
-                </div>
-            </div>
+            <header>                              <!--Barra de Navegação-->                
+                <nav id="nav">
+                    <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                    <span id="hamburger"></span>
+                    </button>            
+                    <ul id="menu" role="menu">
+                        <div class="perfil">
+                            <a href="#"><img src="assets/profile.jpg" alt="Perfil"></a>
+                            <div class="editProfile">
+                                <p>Dany Schudler</p>                               
+                                <div class="editProfile">
+                                    <a href="#">Edit Profile</a>
+                                </div>              
+                            </div>
+                        </div>
+                        <li><a href="#"> <img src="assets/Icones/Overview.png" alt="Overview"> Overview   </a></li>
+                        <li><a href="#"> <img src="assets/Icones/News.png" alt="News"> News </a></li>
+                        <li><a href="#"> <img src="assets/Icones/Playlist.png" alt="Music"> Playlists  </a></li>    
+                        <li><a href="#"> <img src="assets/Icones/Discover.png" alt="Discover"> Discover  </a></li>
+                        <li><a href="#"> <img src="assets/Icones/Dashboard.png" alt="Dashboard"> Dashboard </a></li>
+                        <li> <a href="#"> <img src="assets/Icones/Message.png" alt="Messages"> Messages </a></li>
+                        <li><a href="#"> <img src="assets/Icones/Notification.png" alt="Notifications"> Notifications </a></li>
+                        <li><a href="#"> <img src="assets/Icones/User.png" alt="Account"> Account </a></li>
+                    </ul>                    
+                </nav>
+            </header>
+        </div>
 
         <div class="box-2">
 
@@ -139,5 +141,7 @@
             </div>
         </div>
     </div>
+
+    <script src="js.js"></script>
 </body>
 </html>
